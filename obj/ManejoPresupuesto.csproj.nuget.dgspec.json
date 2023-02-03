@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
         "projectName": "ManejoPresupuesto",
-        "projectPath": "c:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\ManejoPresupuesto.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\ManejoPresupuesto\\ManejoPresupuesto\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
             "Dapper.StrongName": {
               "target": "Package",
               "version": "[2.0.123, )"

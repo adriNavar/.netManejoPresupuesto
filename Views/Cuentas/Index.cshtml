@@ -50,7 +50,7 @@
         <div class="accordion-item">
            <h2 class="accordion-header" id="cabeceraUno">
            @{
-            var id = tipo.tipoCuenta.Replace(" ", "");
+            var id = tipo.tipoCuenta.Replace(" ","");
             var dataBSTarget="#"+id;
             var claseTipoCuenta=ObtenerClaseBalance(tipo.balance);
            }
@@ -68,8 +68,16 @@
                     @foreach (var cuenta in tipo.cuentas)
                     {
                         var claseCuenta = ObtenerClaseBalance(cuenta.balance);
-                        <li class="list-group">
-                            <span><strong>@cuenta.nombre</strong></span>
+                        <li class="list-group-item">
+                            <span>
+                                <strong>@cuenta.nombre</strong>
+                                <a asp-action="Editar" asp-route-id="@cuenta.id" class="btn-primary btn">
+                                    <i class="bi-pencil-fill"></i>
+                                </a>
+                                <a asp-action="Borrar" asp-route-id="@cuenta.id" class="btn-danger btn">
+                                    <i class="bi-trash-fill"></i>
+                                </a>
+                            </span>
                             <span class="@claseCuenta">@FormatearBalance(cuenta.balance)</span>
                         </li>
                     }
